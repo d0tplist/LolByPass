@@ -1,0 +1,146 @@
+GET http://127.0.0.1:8080/liveclientdata/activeplayer
+
+###
+
+GET http://127.0.0.1:8080/liveclientdata/activeplayername
+
+###
+
+GET https://127.0.0.1:2999/liveclientdata/activeplayername
+
+###
+
+GET https://127.0.0.1:2999/liveclientdata/playerlist
+
+###
+
+GET https://127.0.0.1:2999/liveclientdata/allgamedata
+
+###
+
+GET https://127.0.0.1:2999/liveclientdata/activeplayername
+
+###
+
+GET https://127.0.0.1:2999/liveclientdata/playerscores?summonerName=Gordo Mórbido
+
+{
+  "assists": 0,
+  "creepScore": 10,
+  "deaths": 0,
+  "kills": 0,
+  "wardScore": 0.03590670973062515
+}
+
+###
+
+GET https://127.0.0.1:2999/liveclientdata/playeritems?summonerName=Gordo Mórbido
+
+  {
+    "canUse": true,
+    "consumable": true,
+    "count": 1,
+    "displayName": "Poción de Vida",
+    "itemID": 2003,
+    "price": 50,
+    "rawDescription": "GeneratedTip_Item_2003_Description",
+    "rawDisplayName": "Item_2003_Name",
+    "slot": 0
+  }
+
+###
+
+GET https://127.0.0.1:2999/liveclientdata/playermainrunes?summonerName=Gordo Mórbido
+
+{
+  "keystone": {
+    "displayName": "Conquistador",
+    "id": 8010,
+    "rawDescription": "perk_tooltip_Conqueror",
+    "rawDisplayName": "perk_displayname_Conqueror"
+  },
+  "primaryRuneTree": {
+    "displayName": "Precisión",
+    "id": 8000,
+    "rawDescription": "perkstyle_tooltip_7201",
+    "rawDisplayName": "perkstyle_displayname_7201"
+  },
+  "secondaryRuneTree": {
+    "displayName": "Dominación",
+    "id": 8100,
+    "rawDescription": "perkstyle_tooltip_7200",
+    "rawDisplayName": "perkstyle_displayname_7200"
+  }
+}
+
+###
+
+GET https://127.0.0.1:2999/liveclientdata/playersummonerspells?summonerName=Gordo Mórbido
+
+{
+  "summonerSpellOne": {
+    "displayName": "Curación",
+    "rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+  },
+  "summonerSpellTwo": {
+    "displayName": "Destello",
+    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+  }
+}
+
+###
+
+GET https://127.0.0.1:2999/liveclientdata/gamestats
+
+{
+  "gameMode": "CLASSIC",
+  "gameTime": 1007.9351196289063,
+  "mapName": "Map11",
+  "mapNumber": 11,
+  "mapTerrain": "Default"
+}
+
+
+###
+
+GET https://127.0.0.1:2999/liveclientdata/eventdata
+
+
+{
+  "Events": [
+    {
+      "EventID": 0,
+      "EventName": "GameStart",
+      "EventTime": 0.049806077033281329
+    },
+    {
+      "EventID": 1,
+      "EventName": "MinionsSpawning",
+      "EventTime": 65.05318450927735
+    },
+    {
+      "Assisters": [],
+      "EventID": 2,
+      "EventName": "TurretKilled",
+      "EventTime": 814.4068603515625,
+      "KillerName": "Bot Jax",
+      "TurretKilled": "Turret_T1_R_03_A"
+    },
+    {
+      "EventID": 3,
+      "EventName": "FirstBrick",
+      "EventTime": 814.4068603515625,
+      "KillerName": "Bot Jax"
+    },
+    {
+      "Assisters": [],
+      "EventID": 4,
+      "EventName": "ChampionKill",
+      "EventTime": 905.152587890625,
+      "KillerName": "Turret_T2_C_05_A",
+      "VictimName": "Gordo Mórbido"
+    }
+  ]
+}
